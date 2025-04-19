@@ -1,0 +1,7 @@
+BMW 2005 10.5 240
+Audi 2010 8.0 220
+Mercedes 2008 9.2 230
+Toyota 2015 7.5 200
+Ford 2012 6.8 210
+Chevrolet 2007 9.0 225
+Volkswagen 2014 8.5 215
