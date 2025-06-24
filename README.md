@@ -7,9 +7,11 @@
   <img src="./assets/main.jpg" width=205px >
 </div>
 
-### Fundamentals of Algorithmization and Programming (1sem)
+### Fundamentals of Algorithmization and Programming
 | PATH | OPTION |
 | ------- | :-----: |
-| `1.1block/*` | `4` |
+| `1cs.1sem*` | `B4` |
+| `1cs.2sem*` | `B4` |
+
 
 
