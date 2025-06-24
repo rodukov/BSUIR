@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elect\\source\\repos\\SandBox\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{57E4A283-6067-473B-9288-5ACBC1E2E136}|SandBox\\SandBox.vcxproj|C:\\Users\\elect\\source\\repos\\SandBox\\SandBox\\SandBox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57E4A283-6067-473B-9288-5ACBC1E2E136}|SandBox\\SandBox.vcxproj|solutionrelative:SandBox\\SandBox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SandBox.cpp",
+              "DocumentMoniker": "C:\\Users\\elect\\source\\repos\\SandBox\\SandBox\\SandBox.cpp",
+              "RelativeDocumentMoniker": "SandBox\\SandBox.cpp",
+              "ToolTip": "C:\\Users\\elect\\source\\repos\\SandBox\\SandBox\\SandBox.cpp",
+              "RelativeToolTip": "SandBox\\SandBox.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-23T15:11:29.346Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

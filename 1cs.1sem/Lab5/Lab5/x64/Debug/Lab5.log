@@ -1,0 +1,4 @@
+﻿  Lab5.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\cfloat(10,10): error C1083: Cannot open include file: 'float.h': No such file or directory
+  (compiling source file 'Lab5.cpp')
+  
