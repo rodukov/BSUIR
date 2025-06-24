@@ -17,7 +17,7 @@
 | `1cs.1sem/LAB5..` | `B4` | `Matrix (NxM).` |
 | `1cs.1sem/LAB7..` | `B4` | `Symbol datatype.` |
 | `1cs.1sem/LAB8..` | `B4` | `Structures experience.` |
-| `1cs.1sem/LAB9..` | `B4` | `Branch of LAB8.. but with *FILE additionally.` |
+| `1cs.1sem/LAB9..` | `B4` | `Branch of LAB8..(Structures experience) but with *FILE additionally. Functions from "1cs.2sem/LAB1.." were used. ` |
 
 | PATH | OPTION | DESCRIPTION |
 | ------- | :-----: | ------- |
