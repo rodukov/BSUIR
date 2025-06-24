@@ -7,7 +7,7 @@
   <img src="./assets/main.jpg" width=205px >
 </div>
 
-### Fundamentals of Algorithmization and Programming
+
 | PATH | OPTION | DESCRIPTION |
 | ------- | :-----: | ------- |
 | `1cs.1sem/LAB1..` | `B4` | `Simple formula count.` |
