@@ -20,6 +20,7 @@
 | `1cs.1sem/LAB9..` | `B4` | `Branch of LAB8.. but with *FILE additionally.` |
 
 | PATH | OPTION | DESCRIPTION |
+| ------- | :-----: | ------- |
 | `1cs.2sem/LAB1..` | `B4` | `Functions.` |
 | `1cs.2sem/LAB2..` | `B4` | `Recursion.` |
 | `1cs.2sem/LAB3..` | `B4` | `QuickSort(NON-RECURSIVE!) and SelectionSort.` |
