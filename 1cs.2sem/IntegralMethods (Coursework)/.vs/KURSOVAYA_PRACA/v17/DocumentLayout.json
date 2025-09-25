@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elect\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\BSUIR\\1cs.2sem\\KURSOVAYA_PRACA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB356F0-9335-4742-9EDA-FCE6F8188C20}|KURSOVAYA_PRACA.vcxproj|C:\\Users\\elect\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\BSUIR\\1cs.2sem\\KURSOVAYA_PRACA\\KURSOVAYA_PRACA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1FB356F0-9335-4742-9EDA-FCE6F8188C20}|KURSOVAYA_PRACA.vcxproj|solutionrelative:KURSOVAYA_PRACA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KURSOVAYA_PRACA.cpp",
+              "DocumentMoniker": "C:\\Users\\elect\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\BSUIR\\1cs.2sem\\KURSOVAYA_PRACA\\KURSOVAYA_PRACA.cpp",
+              "RelativeDocumentMoniker": "KURSOVAYA_PRACA.cpp",
+              "ToolTip": "C:\\Users\\elect\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\BSUIR\\1cs.2sem\\KURSOVAYA_PRACA\\KURSOVAYA_PRACA.cpp",
+              "RelativeToolTip": "KURSOVAYA_PRACA.cpp",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-25T17:22:34.888Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
