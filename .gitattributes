@@ -1,2 +1,5 @@
 *.sql linguist-detectable=true
 *.sql linguist-language=SQL
+
+*.m linguist-detectable=true
+*.m linguist-language=MATLAB

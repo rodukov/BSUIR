@@ -20,11 +20,11 @@ public:
         cout << "Animal created: " << name << ", Age: " << age << endl;
     }
 
-    virtual void makeSound() const {
+    void makeSound() const {
         cout << "Some animal sound!" << endl;
     }
 
-    virtual void displayInfo() const {
+    void displayInfo() const {
         cout << "Name: " << name << ", Age: " << age << endl;
     }
 
@@ -47,11 +47,11 @@ public:
         cout << "Dog created: " << name << ", Breed: " << breed << endl;
     }
 
-    void makeSound() const override {
+    void makeSound() const {
         cout << "Bark!" << endl;
     }
 
-    void displayInfo() const override {
+    void displayInfo() const {
         Animal::displayInfo();
         cout << "Breed: " << breed << endl;
     }
@@ -73,11 +73,11 @@ public:
         cout << "Cat created: " << name << ", Color: " << color << endl;
     }
 
-    void makeSound() const override {
+    void makeSound() const {
         cout << "Meow!" << endl;
     }
 
-    void displayInfo() const override {
+    void displayInfo() const {
         Animal::displayInfo();
         cout << "Color: " << color << endl;
     }
@@ -99,11 +99,11 @@ public:
         cout << "Bird created: " << name << ", Species: " << species << endl;
     }
 
-    void makeSound() const override {
+    void makeSound() const {
         cout << "Chirp!" << endl;
     }
 
-    void displayInfo() const override {
+    void displayInfo() const {
         Animal::displayInfo();
         cout << "Species: " << species << endl;
     }
@@ -167,11 +167,9 @@ int main() {
         zoo.addAnimal(new Cat("Whiskers", 2, "Black"));
         zoo.addAnimal(new Bird("Tweety", 1, "Canary"));
 
-        cout << "\nAnimals in the Zoo:\n";
-        zoo.displayAll();
+        Dog *dog = new Dog("test", 3, "retr");
+        dog->makeSound();
 
-        cout << "Animal sounds:\n";
-        zoo.makeAllSounds();
 
     }
     catch (const char* msg) {
