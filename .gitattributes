@@ -2,4 +2,7 @@
 *.sql linguist-language=SQL
 
 *.m linguist-detectable=true
-*.m linguist-language=MATLAB
+*.m linguist-language=Matlab
+
+*.accdb linguist-detectable=true
+*.accdb linguist-language=Access
