@@ -1,0 +1,100 @@
+### Задание 28
+
+Используя таблицу Product, определить количество производителей, выпускающих по одной модели. 
+
+```sql
+SELECT COUNT(*) AS quantity
+FROM (
+    SELECT maker
+    FROM Product
+    GROUP BY maker
+    HAVING COUNT(model) = 1
+) AS single_model_makers;
+```
+
+### Задание 43
+
+ Укажите сражения, которые произошли в годы, не совпадающие ни с одним из годов спуска кораблей на воду. 
+
+```sql
+SELECT name
+FROM Battles
+WHERE YEAR(date) NOT IN (
+    SELECT DISTINCT launched
+    FROM Ships
+    WHERE launched IS NOT NULL
+);
+```
+
+### Задание 102
+
+Определить имена разных пассажиров, которые летали
+только между двумя городами (туда и/или обратно).
+
+```sql
+ select name from passenger
+where id_psg in
+(
+select id_psg from trip t,pass_in_trip pit
+where t.trip_no=pit.trip_no
+group by id_psg
+having count(distinct case when town_from<=town_to then town_from+town_to else town_to+town_from end)=1
+)
+```
+
+### Задание 73
+Для каждой страны определить сражения, в которых не участвовали корабли данной страны.
+Вывод: страна, сражение
+
+```sql
+select country, name as battle from classes, battles
+except
+-- только реальные варианты страна-битва
+select country, battle
+from (
+  -- все корабли и их классы, которые есть в бд
+  select class, name as ship_name from ships
+  union
+  select ship, ship from outcomes
+) as sh
+join Classes c on sh.class=c.class
+join Outcomes o on o.ship=sh.ship_name;
+
+-- еще решение (первое, менее оптимальное)
+with sh as (
+  select class, name from ships
+  union
+  select ship, ship from outcomes
+),
+cc as (
+  select name, country, battle from Classes c
+  left join sh on c.class=sh.class
+  join outcomes o on sh.name=o.ship
+)
+select distinct c.country, b.name
+from classes c, battles b
+where (
+  select count(cc.country) from cc
+  where cc.country=c.country and cc.battle=b.name
+)=0
+
+```
+
+### Задание 74
+Вывести все классы кораблей России (Russia). Если в базе данных нет классов кораблей России, вывести классы для всех имеющихся в БД стран.
+Вывод: страна, класс
+
+```sql
+SELECT c.country, c.class
+FROM classes c
+WHERE UPPER(c.country) = 'RUSSIA' AND EXISTS (
+SELECT c.country, c.class
+FROM classes c
+WHERE UPPER(c.country) = 'RUSSIA' )
+UNION ALL
+SELECT c.country, c.class
+FROM classes c
+WHERE NOT EXISTS (SELECT c.country, c.class
+FROM classes c
+WHERE UPPER(c.country) = 'RUSSIA' )
+```

@@ -1,0 +1,111 @@
+### Задание 132
+
+Предполагая, что не существует номера рейса большего 65535,
+вывести номер рейса и его представление в двоичной системе счисления (без ведущих нулей) 
+
+```sql
+WITH BinaryCTE AS (
+    SELECT 
+        trip_no,
+        trip_no AS n,
+        CAST('' AS VARCHAR(100)) AS bin
+    FROM Trip
+    WHERE trip_no <= 65535
+    
+    UNION ALL
+    
+    SELECT 
+        trip_no,
+        n / 2,
+        CAST(CAST(n % 2 AS VARCHAR(1)) + bin AS VARCHAR(100))
+    FROM BinaryCTE
+    WHERE n > 0
+)
+SELECT 
+    trip_no,
+    bin AS binary_representation
+FROM BinaryCTE
+WHERE n = 0
+ORDER BY trip_no
+OPTION (MAXRECURSION 0);
+```
+
+### Задание 53
+
+Определите среднее число орудий для классов линейных кораблей.
+Получить результат с точностью до 2-х десятичных знаков.
+
+```sql
+select
+  cast(avg(numguns*1.0) as numeric(6,2)) as "avg numguns"
+  from classes
+  where type='bb'
+```
+
+### Задание 141
+
+Для каждого из летавших пассажиров определить количество дней в апреле 2003 года, попавших в интервал между датами первого и последнего вылета пассажира включительно.
+Вывести имя пассажира и количество дней.
+
+
+```sql
+SELECT 
+    p.name,
+    CASE 
+        WHEN MIN(pt.date) > '2003-04-30' OR MAX(pt.date) < '2003-04-01' THEN 0
+        ELSE DATEDIFF(day,
+            CASE WHEN MIN(pt.date) > '2003-04-01' THEN MIN(pt.date) ELSE '2003-04-01' END,
+            CASE WHEN MAX(pt.date) < '2003-04-30' THEN MAX(pt.date) ELSE '2003-04-30' END
+        ) + 1
+    END AS days_count
+FROM Passenger p
+INNER JOIN Pass_in_trip pt ON p.ID_psg = pt.ID_psg
+GROUP BY p.ID_psg, p.name
+ORDER BY p.name;
+```
+
+### Задание 120
+
+Для каждой авиакомпании, самолеты которой перевезли хотя бы одного пассажира, вычислить с точностью до двух десятичных знаков средние величины времени нахождения самолетов в воздухе (в минутах). Также рассчитать указанные характеристики по всем летавшим самолетам (использовать слово 'TOTAL').
+Вывод: компания, среднее арифметическое, среднее геометрическое, среднее квадратичное, среднее гармоническое.
+
+```sql
+With t as
+(Select ID_comp, convert(numeric(18,2), Case when time_in > = time_out
+    Then datediff(minute, time_out, time_in)
+    Else datediff(minute, time_out, dateadd(day, 1, time_in))
+   End) as trmin
+From (Select trip_no
+ From Pass_in_trip
+ Group by trip_no, [date]) pt join Trip t on pt.trip_no = t.trip_no
+)
+
+Select Coalesce(c.name, 'TOTAL'), A_mean, G_mean, Q_mean, H_mean
+From (
+ Select Id_comp ,
+  convert(numeric(18,2), avg(trmin)) A_mean,
+  convert(numeric(18,2), Exp(avg(Log(trmin)))) G_mean,
+  convert(numeric(18,2), sqrt(avg(trmin*trmin))) Q_mean,
+  convert(numeric(18,2), count(*)/sum(1/trmin)) H_mean
+ From t
+ Group by ID_comp
+ with cube) as a left join Company c on a.ID_comp = c.ID_comp
+```
+
+### Задание 54
+
+С точностью до 2-х десятичных знаков определите среднее число орудий всех линейных кораблей (учесть корабли из таблицы Outcomes).
+
+```sql
+select
+  cast(avg(numguns*1.0) as numeric(6,2)) as "avg numguns"
+  from (
+    -- все корабли(которые есть в базе) и их классы
+    select name, class from ships
+    union
+    select ship, ship from outcomes
+  ) s
+  join classes c on s.class=c.class
+where type='bb'
+
+```
