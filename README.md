@@ -13,39 +13,64 @@
   <img src="./assets/main.jpg" width=205px >
 </div>
 
+<h2 align="center">4sem. Software Design Technologies (ТППО)</h2>
+
+| PATH | DESCRIPTION |
+| ------- | ------- |
+| `2cs.4sem/'Software Design'/LAB1..`| `*Theory` |
+| `2cs.4sem/'Software Design'/LAB2..`| `BPMN AS-IS & TO-BE` |
+| `2cs.4sem/'Software Design'/LAB3..`| `Use-case diagram with description` |
+| `2cs.4sem/'Software Design'/LAB4..`| `Activity, deployment, communication, class, sequence, and state diagrams` |
+| `2cs.4sem/'Software Design'/LAB5..`| `Command pattern` |
+| `2cs.4sem/'Software Design'/LAB6..`| `Facade pattern` |
+| `2cs.4sem/'Software Design'/LAB7..`| `MVC Pattern` |
+| `2cs.4sem/'Software Design'/LAB8..`| `UNIT-tests` |
+
+<h2 align="center">4sem. Databases [PostgreSQL] (БД)</h2>
+
+| PATH | DESCRIPTION |
+| ------- | ------- |
+| `2cs.4sem/sql/LAB1..`| `1cs.1sem/LAB5 + 1cs.1sem/LAB6` |
+| `2cs.4sem/sql/LAB2..`| `ERD` |
+| `2cs.4sem/sql/LAB3..`| `Indexes` |
+| `2cs.4sem/sql/LAB4..`| `Transactions` |
+| `2cs.4sem/sql/LAB5..`| `DB diagram` |
+| `2cs.4sem/sql/LAB6..`| `DB diagram` |
+| `2cs.4sem/sql/LAB7..`| `*Random MS Access Task / sql-ex.ru Task ` |
+| `2cs.4sem/sql/LAB8..`| `*Random MS Access Task / sql-ex.ru Task` |
 
 <h2 align="center">3sem. Databases [MySQL] (БД)</h2>
 
 | PATH | DESCRIPTION |
 | ------- | ------- |
-| `1cs.1sem/LAB1..`| `*(Theory-oriented lab)` |
-| `1cs.1sem/LAB2..`| `*(Theory-oriented lab)` |
-| `1cs.1sem/LAB3..`| `*(Theory-oriented lab): Database and table creation, Data insertion (single and bulk), Data modification (UPDATE), Data deletion (DELETE), Data filtering (WHERE clauses), Data sorting (ORDER BY), Query limits (LIMIT), SQL Aggregate functions (AVG, COUNT, SUM, MIN), Data grouping (GROUP BY)` |
-| `1cs.1sem/LAB4..`| `Joining tables` |
-| `1cs.1sem/LAB5..`| `*Review of the material covered` |
-| `1cs.1sem/LAB6..`| `*Review of the material covered` |
+| `2cs.3sem/mysql/LAB1..`| `*(Theory-oriented lab)` |
+| `2cs.3sem/mysql/LAB2..`| `*(Theory-oriented lab)` |
+| `2cs.3sem/mysql/LAB3..`| `*(Theory-oriented lab): Database and table creation, Data insertion (single and bulk), Data modification (UPDATE), Data deletion (DELETE), Data filtering (WHERE clauses), Data sorting (ORDER BY), Query limits (LIMIT), SQL Aggregate functions (AVG, COUNT, SUM, MIN), Data grouping (GROUP BY)` |
+| `2cs.3sem/mysql/LAB4..`| `Joining tables` |
+| `2cs.3sem/mysql/LAB5..`| `*Review of the material covered` |
+| `2cs.3sem/mysql/LAB6..`| `*Review of the material covered` |
 
 <h2 align="center">3sem. Computational Methods and Computer Algebra (ВМиКА)</h2>
 
 | PATH | DESCRIPTION |
 | ------- | ------- |
-| `1cs.1sem/LAB1..`| `Plot funcs` |
-| `1cs.1sem/LAB2..`| `Matrix creation and indexing, Matrix concatenation by rows and columns, Element-wise array operations, Matrix algebra operations (multiplication and transposition), Determinant calculation and matrix inversion, Function tabulation and 2D data visualization, Finding roots of polynomials, Linear programming` |
-| `1cs.1sem/LAB3..`| `Matrix operations, Linear and non-linear optimization, Root-finding and solving algebraic equations, Solving systems of linear and non-linear equations, Solving systems of differential equations (ODEs), 2D plotting and multi-plot layouts, 1D data interpolation` |
-| `1cs.1sem/LAB4..`| `Simulink` |
+| `2cs.3sem/matlab/LAB1..`| `Plot funcs` |
+| `2cs.3sem/matlab/LAB2..`| `Matrix creation and indexing, Matrix concatenation by rows and columns, Element-wise array operations, Matrix algebra operations (multiplication and transposition), Determinant calculation and matrix inversion, Function tabulation and 2D data visualization, Finding roots of polynomials, Linear programming` |
+| `2cs.3sem/matlab/LAB3..`| `Matrix operations, Linear and non-linear optimization, Root-finding and solving algebraic equations, Solving systems of linear and non-linear equations, Solving systems of differential equations (ODEs), 2D plotting and multi-plot layouts, 1D data interpolation` |
+| `2cs.3sem/matlab/LAB4..`| `Simulink` |
 
 <h2 align="center">3sem. Object-Oriented Programming (ООП)</h2>
 
 | PATH | DESCRIPTION |
 | ------- | ------- |
-| `1cs.1sem/LAB1..`| `Inheritance and the fundamentals of polymorphism via a virtual destructor.` |
-| `1cs.1sem/LAB2..`| `Use of standard STL containers and data structures.` |
-| `1cs.1sem/LAB3..`| `Abstract classes, interfaces, and multiple inheritance.` |
-| `1cs.1sem/LAB4..`| `Static class members and dynamic memory management.` |
-| `1cs.1sem/LAB5..`| `Class templates and function templates (generic programming).` |
-| `1cs.1sem/LAB6..`| `Working with associative containers and iterator mechanisms.` |
-| `1cs.1sem/LAB7..`| `File I/O and serialization of simple data structures.` |
-| `1cs.1sem/LAB8..`| `Creating a graphical user interface using the Windows API.` |
+| `2cs.3sem/cpp/LAB1..`| `Inheritance and the fundamentals of polymorphism via a virtual destructor.` |
+| `2cs.3sem/cpp/LAB2..`| `Use of standard STL containers and data structures.` |
+| `2cs.3sem/cpp/LAB3..`| `Abstract classes, interfaces, and multiple inheritance.` |
+| `2cs.3sem/cpp/LAB4..`| `Static class members and dynamic memory management.` |
+| `2cs.3sem/cpp/LAB5..`| `Class templates and function templates (generic programming).` |
+| `2cs.3sem/cpp/LAB6..`| `Working with associative containers and iterator mechanisms.` |
+| `2cs.3sem/cpp/LAB7..`| `File I/O and serialization of simple data structures.` |
+| `2cs.3sem/cpp/LAB8..`| `Creating a graphical user interface using the Windows API.` |
 
 <h2 align="center">1sem-2sem. Fundamentals of Algorithmization and Programming (ОАиП)</h2>
 
